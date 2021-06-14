@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Ubuntu:wght@300;400;500;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a{
+    font-family: 'ubuntu', sans-serif;
+    text-decoration: none;
+}
+img{
+    height: 200px;
+    width: 200px;
+}
+.max-width{
+    max-width: 1920px;
+    padding: 0 100px;
+    margin: auto;
+}
+header{
+    height: 600px;
+    width: 100%;
+    position: relative;
+    background: #e0efe3;
+}
+header .wave{
+    position: absolute;
+    width: 100%;
+    height: 137px;
+    bottom: 0;
+    left: 0;
+    background: url(/images/wave.png);
+    animation: wave 10s linear infinite;
+}
+nav .max-width{
+    height: 100px;
+    padding: 0 200px 0 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-logo{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+}
+.nav-logo span{
+    color: red;
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+.nav-item{
+    margin-right: 15px;
+}
+.nav-text{
+    color: gray;
+    font-size: 20px;
+}
+.nav-text:hover{
+    color: crimson;
+}
+.home{
+    color: #111;
+    font-weight: 700;
+}
+.getapp{
+    text-align: center;
+    height: 50px;
+    padding: 7px 10px 7px 10px;
+    background: green;
+    color: #fff;
+    border-radius: 5px;  
+}
+.getapp:hover{
+    background: none;
+    color: crimson;
+    border: 2px solid crimson;
+}
+/*  */
+.banner .max-width{
+    height: 500px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 50px;
+    align-items: center;
+}
+.banner-content{
+    padding: 100px;
+}
+.banner-text h1{
+    color: #111;
+    font-size: 40px;
+    font-weight: 800;
+}
+.banner-text h1 span{
+    font-family: 'Permanent Marker', sans-serif;
+    color: green;
+    font-size: 40px;
+    font-weight: 1000;
+}
+.banner-text p{
+    margin-top: 20px;
+    color: gray;
+    font-size: 20px;
+}
+.banner-btn{
+    margin-top: 30px;
+}
+.btn-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 150px;
+    padding: 5px 5px 5px 5px;
+    background: green;
+    font-weight: 700;
+    border-radius: 8px;
+    border: 1px solid green;
+    color: #fff;
+    font-size: 22px;
+}
+.btn-1:hover{
+    background: none;
+    color: green;
+}
+.banner-picture{
+    margin-top: -50px;
+}
+.banner-picture img{
+    height: 300px;
+    width: 500px;
+    border-radius: 20px;
+}
+/*  */
+.info{
+    height: 400px;
+}
+.info .max-width{
+    height: 400px;
+    padding:50px 0;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+}
+.info-content{
+    text-align: center;
+}
+.info-content img{
+    height: 50px;
+    width: 50px;
+}
+.info-content h2{
+    font-family: 'ubuntu', sans-serif;
+    margin-top: -7px;
+    font-size: 25px;
+}
+.info-content p{
+    margin-top: 15px;
+    color: gray;
+}
+/*  */
+
+.food-sline{
+    height: 550px;
+}
+.item{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-gap: 50px;
+    height: 550px;
+    /* background: darkseagreen; */
+}
+.item img{
+    padding: 50px;
+    height: 600px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sline-content{
+    color: #111;
+    padding:120px 200px;
+}
+.sline-content h2{
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 1;
+}
+.sline-content p{
+    margin-top: 20px;
+    color: grey;
+    font-size: 20px;
+}
+.sline-content h3{
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: 700;
+}
+.sline-content h3 i{
+    font-size: 15px;
+    color:rgb(202, 202, 17);
+}
+.sline-content a{
+    height: 50px;
+    width: 150px;
+    border-radius: 8px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    color: #fff;
+    background: green;
+    font-size: 20px;
+    font-weight: 600;
+}
+.sline-content a:hover{
+    background: none;
+    color: green;
+    border: 1px solid green;
+}
+/*  */
+.list-food{
+    margin-top: 100px;
+    height: 600px;
+}
+.list-food>h1{
+    font-size: 30px;
+    margin-left: 100px;
+    position: relative;
+}
+.list-food>h1::before{
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 0.5px;
+    left: 0;
+    bottom: -5px;
+    background: gray;
+}
+.list-food .max-width{
+    padding: 100px;  
+}
+.food{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+.food-item{
+    height: 320px;
+    width: 220px;
+    border: 1px solid #111;
+    border-radius: 100px;
+    background: blanchedalmond; 
+}
+.food-item img{
+    margin-top: 5px;
+    border-radius: 50%;
+}
+.food-item .food-content{
+    text-indent: 45px;
+    text-align: left;
+}
+.food-item .food-content h1{
+    font-size: 23px;
+}
+.food-item .food-content p{
+    margin-top: 5px;
+    font-size: 18px;
+    color: gray;
+}
+.food-item .food-content h3{
+    margin-top: 5px;
+    font-size: 18px;
+}
+.food-item .food-content a{
+    color: #111;
+    font-size: 23px;
+    float: right;
+    margin-right: 60px;
+    margin-top: -25px;
+}
+.food-item .food-content a:hover{
+    color: red;
+}
+
+
